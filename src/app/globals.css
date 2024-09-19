@@ -2,22 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Salsa", system-ui;
+  font-size: 14px;
+}
+
+.bg-image {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(76, 0, 130, 0.541),
+      rgba(0, 0, 0, 0.795)
+    ),
+    url("../../public/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @layer utilities {
