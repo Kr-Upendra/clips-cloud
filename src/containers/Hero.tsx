@@ -4,8 +4,8 @@ import { FaInstagram } from "react-icons/fa6";
 export default function Hero() {
   return (
     <section className="min-h-screen bg-image px-12 lg:px-9 md:px-6 sm:px-4">
-      <div className="px-40 flex flex-col justify-center min-h-screen items-center">
-        <h1 className="text-6xl text-white text-center font-bold">
+      <div className="px-40 md:px-0 flex flex-col justify-center min-h-screen items-center">
+        <h1 className="text-6xl sm:text-3xl md:text-4xl lg:text-5xl text-white text-center font-bold">
           Download <span className="text-indigo-800">Social Clips</span>{" "}
           Instantly
         </h1>
