@@ -1,14 +1,17 @@
-export default function FeatureButton({ activeIndex, setActiveIndex }: any) {
-  const buttons = [
-    "Easy Downloads",
-    "Infinite Platforms",
-    "High-Quality Media",
-    "Secure and Private",
-  ];
+interface IFeatureButton {
+  activeIndex: number;
+  setActiveIndex: any;
+  buttons: string[];
+}
 
+export default function FeatureButton({
+  activeIndex,
+  setActiveIndex,
+  buttons,
+}: IFeatureButton) {
   return (
     <div className="mt-8 flex flex-wrap gap-3 md:justify-center">
-      {buttons.map((buttonText, index) => (
+      {buttons.map((buttonText: string, index: number) => (
         <button
           key={buttonText}
           onClick={() => setActiveIndex(index)}

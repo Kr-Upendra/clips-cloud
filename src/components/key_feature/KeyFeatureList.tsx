@@ -1,27 +1,19 @@
+const featuresList = [
+  "Download videos and photos in seconds with minimal steps.",
+  "Compatible with YouTube, Instagram, Twitter, and more.",
+  "Save your media in HD or the format of your choice.",
+  "Your downloads are safe and private. We do not track your data.",
+];
+
 export default function KeyFeatureList() {
   return (
     <div className="ml-4">
       <ul>
-        <li className="list-disc">
-          <span className="text-xs text-gray-500">
-            Download videos and photos in seconds with minimal steps.
-          </span>
-        </li>
-        <li className="list-disc">
-          <span className="text-xs text-gray-500">
-            Compatible with YouTube, Instagram, Twitter, and more.
-          </span>
-        </li>
-        <li className="list-disc">
-          <span className="text-xs text-gray-500">
-            Save your media in HD or the format of your choice.
-          </span>
-        </li>
-        <li className="list-disc">
-          <span className="text-xs text-gray-500">
-            Your downloads are safe and private. We do not track your data.
-          </span>
-        </li>
+        {featuresList.map((featureList: string, index: number) => (
+          <li className="list-disc" key={index}>
+            <span className="text-xs text-gray-500">{featureList}</span>
+          </li>
+        ))}
       </ul>
     </div>
   );

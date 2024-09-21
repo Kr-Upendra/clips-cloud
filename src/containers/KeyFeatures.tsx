@@ -16,7 +16,7 @@ export default function KeyFeatures() {
     "Secure and Private",
   ];
 
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState<number>(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -39,8 +39,8 @@ export default function KeyFeatures() {
             <h1 className="text-xl font-medium text-white">Key Features</h1>
           </div>
           <KeyFeatureList />
-          {/* <FeatureButton /> */}
           <FeatureButton
+            buttons={buttons}
             activeIndex={activeIndex}
             setActiveIndex={setActiveIndex}
           />

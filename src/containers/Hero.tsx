@@ -1,6 +1,3 @@
-import Link from "next/link";
-import { FaInstagram } from "react-icons/fa6";
-
 export default function Hero() {
   return (
     <section className="min-h-screen bg-image px-12 lg:px-9 md:px-6 sm:px-4">
