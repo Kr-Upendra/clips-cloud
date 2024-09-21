@@ -1,6 +1,6 @@
 interface IFeatureButton {
   activeIndex: number;
-  setActiveIndex: any;
+  setActiveIndex: (index: number) => void;
   buttons: string[];
 }
 
