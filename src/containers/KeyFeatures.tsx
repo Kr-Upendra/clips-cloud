@@ -46,7 +46,7 @@ export default function KeyFeatures() {
           />
         </div>
         <div className="w-full relative md:mt-7">
-          <div className="text-center main">
+          <div className="text-center">
             <Image
               src={images[activeIndex]}
               width={250}
@@ -59,7 +59,7 @@ export default function KeyFeatures() {
             <Image
               src={images[(activeIndex + 1) % images.length]}
               width={100}
-              className="mx-auto rounded-md opacity-20 cursor-pointer lg:w-[80px] sm:w-[60px]"
+              className="mx-auto rounded-md opacity-20 lg:w-[80px] sm:w-[60px]"
               height={300}
               alt="Feature Image"
             />
@@ -68,7 +68,7 @@ export default function KeyFeatures() {
             <Image
               src={images[(activeIndex + 2) % images.length]}
               width={100}
-              className="mx-auto rounded-md opacity-20 cursor-pointer lg:w-[80px] sm:w-[60px]"
+              className="mx-auto rounded-md opacity-20 lg:w-[80px] sm:w-[60px]"
               height={300}
               alt="Feature Image"
             />
@@ -78,7 +78,7 @@ export default function KeyFeatures() {
             <Image
               src={images[(activeIndex + 3) % images.length]}
               width={100}
-              className="mx-auto rounded-md opacity-20 cursor-pointer lg:w-[80px] sm:w-[60px]"
+              className="mx-auto rounded-md opacity-20 lg:w-[80px] sm:w-[60px]"
               height={300}
               alt="Feature Image"
             />

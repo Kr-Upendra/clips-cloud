@@ -19,7 +19,7 @@ export default function KeyFeatureList() {
         </li>
         <li className="list-disc">
           <span className="text-xs text-gray-500">
-            Your downloads are safe and private. We don’t track your data.
+            Your downloads are safe and private. We do not track your data.
           </span>
         </li>
       </ul>
