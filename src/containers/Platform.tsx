@@ -3,6 +3,7 @@ import youtube from "../../public/platform/youtube.svg";
 import instagram from "../../public/platform/instagram.svg";
 import facebook from "../../public/platform/facebook.svg";
 import x from "../../public/platform/x.svg";
+import Link from "next/link";
 
 const images = [youtube, instagram, facebook, x];
 const platforms = ["Youtube", "Instagram", "Facebook", "X (Twitter)"];
@@ -29,20 +30,22 @@ export default function Platform() {
               className="border rounded-lg relative border-gray-800 shadow-xl pb-5 pt-4"
               key={index}
             >
-              <div className="text-center">
-                <Image
-                  src={images[index]}
-                  className="mx-auto select-none selector"
-                  alt="instagram logo"
-                  width={170}
-                  height={170}
-                />
-              </div>
-              <div className="text-center">
-                <h1 className="text-xl text-white font-bold mb-3">
-                  {platforms[index]}
-                </h1>
-              </div>
+              <Link href={`${platforms[index].toLowerCase()}`} className="">
+                <div className="text-center">
+                  <Image
+                    src={images[index]}
+                    className="mx-auto select-none selector"
+                    alt="instagram logo"
+                    width={170}
+                    height={170}
+                  />
+                </div>
+                <div className="text-center">
+                  <h1 className="text-xl text-white font-bold mb-3">
+                    {platforms[index]}
+                  </h1>
+                </div>
+              </Link>
             </div>
           ))}
         </div>
