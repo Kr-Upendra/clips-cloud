@@ -36,7 +36,7 @@ export default function KeyFeatures() {
       <div className="grid grid-cols-2 gap-5 min-h-[90vh] md:grid-cols-1">
         <div className="w-full flex justify-center items-start flex-col md:items-center">
           <div className="mb-5">
-            <h1 className="text-xl font-medium text-white">Key Features</h1>
+            <h1 className="text-2xl font-medium text-white">Key Features</h1>
           </div>
           <KeyFeatureList />
           <FeatureButton

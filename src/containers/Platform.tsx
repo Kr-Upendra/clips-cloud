@@ -15,10 +15,10 @@ export default function Platform() {
     >
       <div>
         <div className="text-center">
-          <h1 className="text-2xl text-white mb-2 font-bold">
+          <h1 className="text-4xl sm:text-2xl text-white mb-2 font-bold">
             Platforms We Support
           </h1>
-          <p className="text-xs text-gray-500">
+          <p className="text-gray-500">
             We are continually expanding our platform support to enhance your
             experience.
           </p>

@@ -6,7 +6,7 @@ export default function Hero() {
           Download <span className="text-indigo-800">Social Clips</span>{" "}
           Instantly
         </h1>
-        <p className="mt-6 mb-4 text-white">
+        <p className="mt-6 text-lg mb-4 text-white">
           Easily grab media from YouTube, Instagram, Twitter, and more with just
           a click.
         </p>

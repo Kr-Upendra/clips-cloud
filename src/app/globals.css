@@ -4,7 +4,6 @@
 
 body {
   font-family: "Salsa", system-ui;
-  font-size: 14px;
 }
 
 .bg-image {
@@ -17,38 +16,6 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-/* .image-transition {
-  transition: opacity 0.5s ease-in-out;
-} */
-
-/* .image-transition {
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-} */
-
-.image-transition {
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
-
-.image-enter {
-  transform: translateX(100%);
-  opacity: 0;
-}
-
-.image-enter-active {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-.image-exit {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-.image-exit-active {
-  transform: translateX(-100%);
-  opacity: 0;
 }
 
 @layer utilities {

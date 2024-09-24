@@ -15,7 +15,7 @@ export default function FeatureButton({
         <button
           key={buttonText}
           onClick={() => setActiveIndex(index)}
-          className={`py-1.5 px-4 text-xs rounded-full transition-colors duration-700 ${
+          className={`py-1.5 px-4 rounded-full transition-colors duration-700 ${
             index === activeIndex
               ? "bg-[#5900ff] text-white"
               : "bg-white text-black hover:bg-[#5900ff] hover:text-white"

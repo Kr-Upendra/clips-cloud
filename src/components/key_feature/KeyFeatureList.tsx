@@ -11,7 +11,7 @@ export default function KeyFeatureList() {
       <ul>
         {featuresList.map((featureList: string, index: number) => (
           <li className="list-disc" key={index}>
-            <span className="text-xs text-gray-500">{featureList}</span>
+            <span className="text-gray-500">{featureList}</span>
           </li>
         ))}
       </ul>
