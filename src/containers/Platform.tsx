@@ -19,11 +19,11 @@ export default function Platform() {
             Platforms We Support
           </h1>
           <p className="text-xs text-gray-500">
-            We're continually expanding our platform support to enhance your
+            We are continually expanding our platform support to enhance your
             experience.
           </p>
         </div>
-        <div className="grid grid-cols-4 gap-6 mt-10">
+        <div className="grid grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-6 mt-10">
           {Array.from({ length: 4 }).map((_, index: number) => (
             <div
               className="border rounded-lg relative border-gray-800 shadow-xl"
