@@ -17,7 +17,7 @@ export default function Feedback() {
           </p>
         </div>
         <div className="grid grid-cols-3 md:grid-cols-2 xs:grid-cols-1 gap-6 mt-10">
-          {testimonials.map((testimonial: any) => (
+          {testimonials.map((testimonial) => (
             <div
               className="border p-3 py-5 rounded-lg relative border-gray-800 shadow-xl"
               key={testimonial?.id}
