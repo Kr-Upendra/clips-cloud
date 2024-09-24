@@ -8,7 +8,7 @@ export default function Header() {
           <h1 className="text-white text-xl">Clips Cloud</h1>
         </Link>
         <Link href="/">
-          <span className="px-3 py-1.5 rounded-full bg-gradient-to-r from-indigo-900 to-indigo-600/90 text-white">
+          <span className="px-3 py-1.5 rounded-full bg-gradient-to-r from-[#5900ff] to-[#4d09cc] text-white">
             Get Started
           </span>
         </Link>

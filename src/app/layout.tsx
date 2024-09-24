@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@fontsource/salsa";
 import "./globals.css";
 import Header from "@/containers/Header";
+import Footer from "@/containers/Footer";
 
 export const metadata: Metadata = {
   title: "Clips Cloud | A place to do everything with viral clips",
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className={`relative text-gray-300 bg-black min-h-screen h-full`}>
         <Header />
         <div>{children}</div>
+        <Footer />
       </body>
     </html>
   );
