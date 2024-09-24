@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import first from "../../public/temp/img_outfit_transition.webp";
-import second from "../../public/temp/img_3d_editing_trick.webp";
-import third from "../../public/temp/img_replace_sky.webp";
+import download from "../../public/temp/download.png";
+import platforms from "../../public/temp/platforms.png";
+import quality from "../../public/temp/quality.png";
+import security from "../../public/temp/security.png";
 import FeatureButton from "@/components/key_feature/FeatureButton";
 import KeyFeatureList from "@/components/key_feature/KeyFeatureList";
 import { useEffect, useState } from "react";
@@ -26,7 +27,7 @@ export default function KeyFeatures() {
     return () => clearInterval(interval);
   }, [buttons.length]);
 
-  const images = [first, second, third, first];
+  const images = [download, platforms, quality, security];
 
   return (
     <section
@@ -51,7 +52,7 @@ export default function KeyFeatures() {
               src={images[activeIndex]}
               width={250}
               className="mx-auto rounded-md lg:w-[220px] sm:w-[180px] selector"
-              height={300}
+              height={250}
               alt="Feature Image"
             />
           </div>
@@ -60,7 +61,7 @@ export default function KeyFeatures() {
               src={images[(activeIndex + 1) % images.length]}
               width={100}
               className="mx-auto rounded-md opacity-20 lg:w-[80px] sm:w-[60px] selector"
-              height={300}
+              height={250}
               alt="Feature Image"
             />
           </div>
@@ -69,7 +70,7 @@ export default function KeyFeatures() {
               src={images[(activeIndex + 2) % images.length]}
               width={100}
               className="mx-auto rounded-md opacity-20 lg:w-[80px] sm:w-[60px] selector"
-              height={300}
+              height={250}
               alt="Feature Image"
             />
           </div>
@@ -79,7 +80,7 @@ export default function KeyFeatures() {
               src={images[(activeIndex + 3) % images.length]}
               width={100}
               className="mx-auto rounded-md opacity-20 lg:w-[80px] sm:w-[60px] selector"
-              height={300}
+              height={250}
               alt="Feature Image"
             />
           </div>

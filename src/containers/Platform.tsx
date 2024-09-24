@@ -26,7 +26,7 @@ export default function Platform() {
         <div className="grid grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-6 mt-10">
           {Array.from({ length: 4 }).map((_, index: number) => (
             <div
-              className="border rounded-lg relative border-gray-800 shadow-xl"
+              className="border rounded-lg relative border-gray-800 shadow-xl pb-5 pt-4"
               key={index}
             >
               <div className="text-center">
@@ -43,12 +43,6 @@ export default function Platform() {
                   {platforms[index]}
                 </h1>
               </div>
-              {/* <div className="absolute bottom-0 left-0 rounded-b-lg px-2 z-10 py-3 bg-gradient-to-b from-[#00000027] to-[#5900ff79] ">
-                <p className="text-xs text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Iusto, perferendis.
-                </p>
-              </div> */}
             </div>
           ))}
         </div>
