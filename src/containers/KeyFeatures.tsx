@@ -50,16 +50,16 @@ export default function KeyFeatures() {
             <Image
               src={images[activeIndex]}
               width={250}
-              className="mx-auto rounded-md lg:w-[220px] sm:w-[180px]"
+              className="mx-auto rounded-md lg:w-[220px] sm:w-[180px] selector"
               height={300}
               alt="Feature Image"
             />
           </div>
-          <div className="text-center absolute top-0 -left-10 md:left-0">
+          <div className="text-center absolute top-0 -left-10 md:left-0 ">
             <Image
               src={images[(activeIndex + 1) % images.length]}
               width={100}
-              className="mx-auto rounded-md opacity-20 lg:w-[80px] sm:w-[60px]"
+              className="mx-auto rounded-md opacity-20 lg:w-[80px] sm:w-[60px] selector"
               height={300}
               alt="Feature Image"
             />
@@ -68,7 +68,7 @@ export default function KeyFeatures() {
             <Image
               src={images[(activeIndex + 2) % images.length]}
               width={100}
-              className="mx-auto rounded-md opacity-20 lg:w-[80px] sm:w-[60px]"
+              className="mx-auto rounded-md opacity-20 lg:w-[80px] sm:w-[60px] selector"
               height={300}
               alt="Feature Image"
             />
@@ -78,7 +78,7 @@ export default function KeyFeatures() {
             <Image
               src={images[(activeIndex + 3) % images.length]}
               width={100}
-              className="mx-auto rounded-md opacity-20 lg:w-[80px] sm:w-[60px]"
+              className="mx-auto rounded-md opacity-20 lg:w-[80px] sm:w-[60px] selector"
               height={300}
               alt="Feature Image"
             />

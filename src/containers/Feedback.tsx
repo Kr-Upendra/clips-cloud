@@ -45,7 +45,7 @@ export default function Feedback() {
               <div className="flex items-center gap-x-3">
                 <Image
                   src={usersImage[index]}
-                  className=""
+                  className="selector"
                   alt="instagram logo"
                   width={40}
                   height={40}

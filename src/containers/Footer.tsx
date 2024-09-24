@@ -1,4 +1,6 @@
 import Link from "next/link";
+import logo from "../../public/logo.png";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -6,7 +8,13 @@ export default function Footer() {
       <div>
         <div className="flex items-center justify-between md:flex-col md:gap-y-3">
           <Link href="/">
-            <h1 className="text-xl text-white">Clips Cloud</h1>
+            <Image
+              className="selector"
+              src={logo}
+              alt="Clips Cloud Logo"
+              width={120}
+              height={40}
+            />
           </Link>
 
           <Link href="/">

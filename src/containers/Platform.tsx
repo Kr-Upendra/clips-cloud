@@ -32,7 +32,7 @@ export default function Platform() {
               <div className="text-center">
                 <Image
                   src={images[index]}
-                  className="mx-auto select-none"
+                  className="mx-auto select-none selector"
                   alt="instagram logo"
                   width={170}
                   height={170}
